@@ -1,0 +1,10 @@
+# .idea
+.idea
+# iml
+*.iml
+
+# Project exclude paths
+# todo: compile through GitHub actions
+#/assets/script/main.js
+#/assets/style/main.css
+#/assets/style/main.css.map

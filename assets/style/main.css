@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  min-height: 100%;
+  background-color: #3b444b;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+#container #nav {
+  display: flex;
+  justify-content: space-between;
+}
+#container #nav .header-element {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+#container #nav .header-element .nav-element .nav-clickable {
+  color: white;
+  text-decoration: underline;
+}
+#container #nav .header-element .nav-element .nav-clickable:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#container #nav .header-element .nav-element a :link, #container #nav .header-element .nav-element a :visited, #container #nav .header-element .nav-element a :hover, #container #nav .header-element .nav-element a :active {
+  color: white;
+}
+#container #text-field textarea {
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 0;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

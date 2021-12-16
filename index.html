@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paste</title>
+
+    <link href="favicon.ico" rel="icon">
+
+    <link href="assets/style/main.css" rel="stylesheet" type="text/css">
+    <script src="assets/script/main.js" defer></script>
+</head>
+<body>
+<div id="container">
+    <header id="nav">
+        <div class="header-element">
+            <div class="nav-element">
+                <a onclick="copyToClipboard()" id="save" class="nav-clickable">save</a>
+            </div>
+            <div class="nav-element">
+                <a class="nav-clickable">lang</a>
+            </div>
+        </div>
+        <div class="header-element">
+            <div class="nav-element">
+                <a href="https://xpple.dev/" target="_blank" class="nav-clickable">about</a>
+            </div>
+            <div class="nav-element">
+                <a href="https://github.com/xpple/paste/" target="_blank" class="nav-clickable">source</a>
+            </div>
+        </div>
+    </header>
+    <div id="text-field">
+        <textarea id="text-editor" autofocus></textarea>
+    </div>
+</div>
+</body>
+</html>
