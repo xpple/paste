@@ -9,8 +9,7 @@ This project is open to contributions. To get started you need to have the follo
 - Sass
 
 ## Todo
-There are a few things that are on my todo-list for this website. 
-- Implement compression to shorten the URL (Compression Streams API)
+There are a few things that are on my todo-list for this website.
 - Add a GitHub workflow which will compile the TypeScript and Sass files
 - Implement very basic syntax highlighting (as lightweight as possible)
 
