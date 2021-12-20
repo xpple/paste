@@ -30,6 +30,13 @@ html, body {
 #container #nav .header-element .nav-element a :link, #container #nav .header-element .nav-element a :visited, #container #nav .header-element .nav-element a :hover, #container #nav .header-element .nav-element a :active {
   color: white;
 }
+#container #text-field {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#container #text-field ::-webkit-scrollbar {
+  display: none;
+}
 #container #text-field textarea {
   width: 100%;
   height: 100%;

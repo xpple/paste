@@ -41,6 +41,12 @@ html, body {
     }
   }
   #text-field {
+    ::-webkit-scrollbar {
+      display:none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     textarea {
       width: 100%;
       height: 100%;
