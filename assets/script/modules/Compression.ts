@@ -17,7 +17,7 @@ export class Compression {
             if (done || value == undefined) {
                 break;
             }
-            result += String.fromCharCode.apply(null, value);
+            result += String.fromCharCode(...value);
         }
         return btoa(result);
     }
