@@ -31,6 +31,10 @@ export class Utils {
         navigator.clipboard.writeText(`https://paste.xpple.dev/#${base64}`)
             .then(() => {
             console.log("Async: Copying to clipboard was successful!");
+            if (doCompress) {
+                console.warn("Warning: Compression is not yet supported by Firefox and Safari. Users of " +
+                    "these browsers will not be able to view your paste.");
+            }
         }, (err) => {
             console.error("Async: Could not copy text: ", err);
         });
