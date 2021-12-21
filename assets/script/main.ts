@@ -5,8 +5,15 @@ export const textArea: HTMLTextAreaElement | null = document.querySelector("#tex
 window.addEventListener("load", () => Utils.pasteToTextArea());
 
 const saveButton: HTMLLinkElement | null = document.querySelector("#save");
-if (saveButton == undefined) {
+if (saveButton == null) {
     console.error("Save button is missing.");
 } else {
-    saveButton.onclick = () => Utils.copyToClipboard();
+    saveButton.onclick = () => Utils.copyToClipboard(false);
+}
+
+const compressSaveButton: HTMLLinkElement | null = document.querySelector("#compress-save");
+if (compressSaveButton == null) {
+    console.error("Compress save button is missing.");
+} else {
+    compressSaveButton.onclick = () => Utils.copyToClipboard(true);
 }
