@@ -14,4 +14,4 @@ There are a few things that are on my todo-list for this website.
 - Implement very basic syntax highlighting (as lightweight as possible)
 
 If you have any questions regarding this website, don't hesitate to send me a message through my 
-[Discord](https://dicsord.xpple.dev/).
+[Discord](https://discord.xpple.dev/).
