@@ -15,10 +15,10 @@ jobs:
           npm install -g typescript
           npm install -g sass
 
-      - name: compile
-        run: |
-          tsc
-          sass assets/style
+      - name: compile ts
+        run: tsc
+      - name: compile scss
+        run: sass assets/style
 
       - name: config
         run: |
