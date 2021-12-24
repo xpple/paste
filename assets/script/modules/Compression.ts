@@ -1,3 +1,4 @@
+///<reference path="../CompressionStreams.d.ts" />
 export class Compression {
 
     private readonly format: "gzip" | "deflate";

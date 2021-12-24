@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: install
+        run: |
+          npm install -g typescript
+          npm install -g sass
+
+      - name: compile
+        run: |
+          tsc
+          sass assets/style
+
+      - name: config
+        run: |
+          git config user.email "fred@xpple.dev"
+          git config user.name = "xpple"
+
+      - name: change branch
+        run: git checkout -b compiled
+
+      - name: commit changes
+        run: |
+          git add -A
+          git commit -m "[AUTO] Compile" -a
+
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: compiled
