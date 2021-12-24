@@ -3,7 +3,3 @@
 # iml
 *.iml
 
-# Project exclude paths
-/assets/script/main.js
-/assets/style/main.css
-/assets/style/main.css.map
