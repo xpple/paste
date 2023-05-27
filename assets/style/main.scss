@@ -3,12 +3,12 @@ $text-color: white;
 
 
 html, body {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  background-color: $background-color;
 }
 #container {
   min-height: 100%;
-  background-color: $background-color;
 
   display: grid;
   grid-template-rows: auto 1fr;
