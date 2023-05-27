@@ -4,62 +4,66 @@ $text-color: white;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   background-color: $background-color;
   height: 100vh;
 }
-#container {
-  min-height: 100%;
+body {
+  height: 100%;
 
-  display: grid;
-  grid-template-rows: auto 1fr;
-  #nav {
-    display: flex;
-    justify-content: space-between;
-    .header-element {
-      width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#nav {
+  width: 100%;
 
-      display: flex;
-      justify-content: space-around;
-      justify-items: center;
+  display: flex;
+  justify-content: space-around;
 
-      .nav-element {
-        .nav-clickable {
-          color: $text-color;
+  .nav-element {
 
-          text-decoration: underline;
-        }
-        .nav-clickable:hover {
-          opacity: .7;
-          cursor: pointer;
-        }
-        a {
-          :link, :visited, :hover, :active {
-            color: $text-color;
-          }
-        }
+    .nav-clickable {
+      color: $text-color;
+
+      text-decoration: underline;
+    }
+
+    .nav-clickable:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+
+    a {
+      :link, :visited, :hover, :active {
+        color: $text-color;
       }
     }
   }
-  #text-field {
-    ::-webkit-scrollbar {
-      display:none;
-    }
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 
-    textarea {
-      width: 100%;
-      height: 100%;
+}
+#text-field {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
 
-      color: $text-color;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-      padding: 0;
-      background-color: transparent;
-      resize: none;
-      border: none;
-      outline: none;
-    }
+  textarea {
+    width: 100%;
+    height: 100%;
+
+    color: $text-color;
+
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
   }
 }
