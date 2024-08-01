@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #3b444b;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#nav .nav-element .nav-clickable {
+  color: white;
+  text-decoration: underline;
+}
+#nav .nav-element .nav-clickable:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#nav .nav-element a :link, #nav .nav-element a :visited, #nav .nav-element a :hover, #nav .nav-element a :active {
+  color: white;
+}
+
+#text-field {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#text-field ::-webkit-scrollbar {
+  display: none;
+}
+#text-field textarea {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */
